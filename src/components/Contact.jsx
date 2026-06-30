@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 
 const CopyEmailButton = () => {
-  const emailRef = useRef("seu-email@exemplo.com");
+  const emailRef = useRef("joaodevbezerra@gmail.com");
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = () => {
@@ -16,7 +16,7 @@ const CopyEmailButton = () => {
   return (
     <button
       onClick={copyToClipboard}
-      className={`px-10 py-10 font-semibold rounded-md text-3xl text-purple-800 cursor-pointer 
+      className={`px-3 py-5 font-semibold rounded-md text-2xl text-purple-800 cursor-pointer 
         ${copied ? 'bg-green-500' : 'bg-white'} hover:bg-opacity-80`}
     >
       {copied ? "Copiado!" : "Copiar Email"}

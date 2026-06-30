@@ -10,12 +10,19 @@ const Projects = () => {
                 <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
 
                     <div className="w-full lg:w-1/4">
-                    <img 
-                    className='mb-20 rounded'
-                    src={project.image} 
-                    width={150} 
-                    height={150} 
-                    alt={project.title} />
+                    <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                        <img
+                        className="mb-20 rounded transition-transform duration-300 hover:scale-105"
+                        src={project.image}
+                        width={150}
+                        height={150}
+                        alt={project.title}
+                        />
+                    </a>
                     
                     </div>
                     <div className="w-full  max-w-xl lg:w-3/4">
